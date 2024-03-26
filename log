@@ -31,3 +31,24 @@ Tue 26 Mar 2024 03:36:45 AM UTC:
  tests:  1|5
 total_score: 10/70
 efd81d8
+Tue 26 Mar 2024 04:36:32 PM UTC: 
+ list.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:72:7: error: ‘List’ {aka ‘struct List’} has no member named ‘Node’
+   72 |   list->
+      |       ^~
+list.c:73:10: error: ‘head’ undeclared (first use in this function)
+   73 |   Node * head;
+      |          ^~~~
+list.c:73:10: note: each undeclared identifier is reported only once for each function it appears in
+list.c:75:10: error: unused variable ‘current’ [-Werror=unused-variable]
+   75 |   Node * current;
+      |          ^~~~~~~
+list.c:74:10: error: unused variable ‘tail’ [-Werror=unused-variable]
+   74 |   Node * tail;
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f71b6d3
