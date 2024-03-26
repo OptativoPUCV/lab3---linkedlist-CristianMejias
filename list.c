@@ -135,10 +135,14 @@ void * popCurrent(List * list)
     list->head->prev = NULL;
     list->current = list->head;
   }
-  list->head->next->prev = NULL;
-  free(list->current);
-  list->current = firstList(list);
-  return list->current->data;
+
+  if (list->current == list->tail)
+  {
+    list->tail = list->tail->prev;
+    list->tail->next = NULL;
+    list->current = list->tail;
+  }
+
 }
 
 void cleanList(List * list) {
