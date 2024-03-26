@@ -149,3 +149,8 @@ list.c:82:17: error: ‘NUll’ undeclared (first use in this function); did you
 list.c:82:17: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 499de27
+Tue 26 Mar 2024 05:51:40 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+c114fa0

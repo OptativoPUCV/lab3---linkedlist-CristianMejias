@@ -79,8 +79,8 @@ void pushFront(List * list, void * data)
   Node*  nodoN = (Node*) malloc(sizeof(Node));
 
   nodoN->data = data;
-  nodoN->next = NUll;
-  nodoN->prev = NUll;
+  nodoN->next = NULL;
+  nodoN->prev = NULL;
 
   nodoN->next = list->head;
   nodoN->next->prev = nodoN;
