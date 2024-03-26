@@ -134,6 +134,7 @@ void * popCurrent(List * list)
   {
     list->head = list->head->next;
     list->head->prev = NULL;
+    free(list->current);
     list->current = list->head;
   }
 
@@ -141,6 +142,7 @@ void * popCurrent(List * list)
   {
     list->tail = list->tail->prev;
     list->tail->next = NULL;
+    free(list->current);
     list->current = list->tail;
   }
 
@@ -153,9 +155,7 @@ void * popCurrent(List * list)
     free(list->current);
     list->current = siguienteCu;
   }
-  
   return data;
-
 }
 
 void cleanList(List * list) {
