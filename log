@@ -154,3 +154,15 @@ Tue 26 Mar 2024 05:51:40 PM UTC:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 c114fa0
+Tue 26 Mar 2024 05:52:39 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:86:3: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   86 |   lista->head->prev = nodoN;
+      |   ^~~~~
+      |   list
+list.c:86:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+20d0b63
