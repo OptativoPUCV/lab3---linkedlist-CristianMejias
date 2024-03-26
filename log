@@ -137,3 +137,15 @@ Tue 26 Mar 2024 05:34:54 PM UTC:
  tests:  9|3
 total_score: 35/70
 b0f0213
+Tue 26 Mar 2024 05:51:26 PM UTC: 
+ list.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:82:17: error: ‘NUll’ undeclared (first use in this function); did you mean ‘NULL’?
+   82 |   nodoN->next = NUll;
+      |                 ^~~~
+      |                 NULL
+list.c:82:17: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+499de27
