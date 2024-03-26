@@ -166,3 +166,8 @@ list.c:86:3: error: ‘lista’ undeclared (first use in this function); did you
 list.c:86:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 20d0b63
+Tue 26 Mar 2024 05:52:45 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+0838582
