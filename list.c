@@ -99,9 +99,9 @@ void pushCurrent(List * list, void * data)
 
   if (list->head == NULL)
     pushFront(list, data);
-  else if (list->head->next == NULL)
+  else if (list->head == list->current)
     pushFront(list, data);
-  else if (list->tail->next == NULL)
+  else if (list->tail == list->current)
     {
       nodoN->prev = list->tail;
       list->tail->next = nodoN;
