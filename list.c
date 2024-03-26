@@ -150,7 +150,7 @@ void * popCurrent(List * list)
     Node* siguienteCu = list->current->next;
     anteriorCu->next = siguienteCu;
     siguienteCu->prev = anteriorCu;
-
+    free(list->current);
     list->current = siguienteCu;
   }
   
