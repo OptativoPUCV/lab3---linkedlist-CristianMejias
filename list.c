@@ -59,9 +59,11 @@ void pushFront(List * list, void * data)
   Node* nuevoNodo = (Node*) malloc(sizeof(Node));
   nuevoNodo->data = data;
 
+  nuevoNodo->next = list->head;
+  nuevoNodo->prev = NULL;
+  
   if (list->head != NULL)
-    nuevoNodo->next = list->head;
-  list->head->prev = NULL;
+    list->head->prev = nuevoNodo;
   list->head = nuevoNodo;
 }
 
