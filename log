@@ -52,3 +52,9 @@ list.c:74:10: error: unused variable ‘tail’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 f71b6d3
+Tue 26 Mar 2024 04:37:04 PM UTC: 
+ list.c | 14 --------------
+ 1 file changed, 14 deletions(-)
+ tests:  2|5
+total_score: 15/70
+a031900
