@@ -96,10 +96,11 @@ void pushBack(List * list, void * data) {
 void pushCurrent(List * list, void * data)
 {
   Node* nodoN = createNode(data);
-
+/*
   if (list->head == NULL)
     pushFront(list, data);
-  else if (list->head == list->current)
+  else */
+  if (list->head == list->current)
     pushFront(list, data);
   else if (list->tail == list->current)
     {
