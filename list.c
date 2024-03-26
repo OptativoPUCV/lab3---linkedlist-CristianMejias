@@ -99,6 +99,7 @@ void pushCurrent(List * list, void * data)
   /*
   if (list->head == list->current)
     pushFront(list, data);
+    ---------------------REVISAR
   */
   
   if(list->current == list->head)
@@ -126,8 +127,12 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void * popCurrent(List * list) {
-    return NULL;
+void * popCurrent(List * list) 
+{
+  list->head->next->prev = NULL;
+  list->head = list->head->next;
+  free(list->current);
+  list->current = firstList(list);
 }
 
 void cleanList(List * list) {
